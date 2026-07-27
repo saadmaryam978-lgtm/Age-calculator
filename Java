@@ -1,0 +1,15 @@
+console.log("تم الاتصال بجافا سكريبت");
+let birthYearImput = document.getElementById("birthyear");
+let button = document.getElementById("calculatebtn");
+let result = document.getElementById("result");
+
+button.addEventListener("click", function () {
+    let birthYear = birthYearImput.value ;
+    إذا كانت سنة الميلاد فارغة ("){
+        result.textContent = "الرجاء إدخال سنة ميلادك"
+        يعود؛
+    }
+    let currentYear = new Date().getFullYear;
+    let age = currentYear - birthYear;
+    result.textContent = "عمرك هو " + age;
+});
